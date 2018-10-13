@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <title>HomeShopp | Clothes For Men, Women & Children</title>
@@ -14,41 +14,58 @@
 <body>
 
     <header>
-        <div class="brand">
-            <a href="#"><img src="img/logo.png" alt=""></a>
-        </div>
+        <a href="#"><img src="img/logo.png" alt=""></a>
     </header>
 
     <hr class="body">
 
-    <section class="navbar">
-        <div class="toggle">
-            <a href="javascript:void(0);" class="icon" onclick="ShowMenu()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="store.html">store</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="services.html">services</a></li>
-                </ul>
+    <!--section class="navbar">
+        <button onclick="ShowMenu" class="btnMenu"><i class="fas fa-bars"></i></button>
+        <nav id="menu" class="menu-content">
+            <div class="menu" id="menu_1">
+                <a href="index.html">home</a>
+                <a href="store.html">store</a>
+                <a href="about.html">about</a>
+                <a href="services.html">services</a>
             </div>
-            <div class="header-icons">
-                <ul>
-                    <li><a><i class="fas fa-user"></i></a></li>
-                    <li><a><i class="fas fa-heart"></i></a></li>
-                    <li><a><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
+            <div class="header-icons" id="menu_2">
+                <a><i class="fas fa-user"></i></a>
+                <a><i class="fas fa-heart"></i></a>
+                <a><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
-    </section>
+    </section-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
     <!--see hover sidenav buttons in w3schools for css-->
     <section class="side-icons">
-        <a href="#" id="fb"></a><i class="fab fa-facebook"></i></a>
+        <a href="#" id="fb"><i class="fab fa-facebook"></i></a>
         <a href="#" id="fb"><i class="fab fa-facebook-messenger"></i></a>
         <a href="#" id="ins"><i class="fab fa-instagram"></i></a>
         <a href="#" id="tw"><i class="fab fa-twitter"></i></a>
@@ -146,7 +163,8 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src=""></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -15,4 +15,3 @@ function ShowPage(id)
         document.getElementById('page' + id).style.display = 'block';
 }
 
-/** Menu function*/

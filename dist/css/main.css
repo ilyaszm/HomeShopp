@@ -1,0 +1,46 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* INDEX page */
+/* Header */
+header img {
+    width: 80px;
+}
+
+/* Navbar */
+
+
+
+/*************** MEDIA QUERIES ***************/
+
+@media (min-width: 600px) {
+    
+    
+
+}
+
+@media (min-width: 768px) {
+    
+    /* section: navbar */
+    .navbar .icon {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    
+
+}
+
+@media (min-width: 1200px) {
+    
+    
+
+}
