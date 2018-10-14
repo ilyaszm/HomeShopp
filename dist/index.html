@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Archivo+Black|Basic|Josefin+Sans|Oswald|Passion+One|Righteous|Ultra">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>HomeShopp | Clothes For Men, Women & Children</title>
 </head>
@@ -19,24 +20,7 @@
 
     <hr class="body">
 
-    <!--section class="navbar">
-        <button onclick="ShowMenu" class="btnMenu"><i class="fas fa-bars"></i></button>
-        <nav id="menu" class="menu-content">
-            <div class="menu" id="menu_1">
-                <a href="index.html">home</a>
-                <a href="store.html">store</a>
-                <a href="about.html">about</a>
-                <a href="services.html">services</a>
-            </div>
-            <div class="header-icons" id="menu_2">
-                <a><i class="fas fa-user"></i></a>
-                <a><i class="fas fa-heart"></i></a>
-                <a><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </nav>
-    </section-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,17 +40,17 @@
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <ul class="header-icons" id="menu_2">
+                <li><a><i class="fas fa-user"></i></a></li>
+                <li><a><i class="fas fa-heart"></i></a></li>
+                <li><a><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
         </div>
     </nav>
 
-    <!--see hover sidenav buttons in w3schools for css-->
     <section class="side-icons">
         <a href="#" id="fb"><i class="fab fa-facebook"></i></a>
-        <a href="#" id="fb"><i class="fab fa-facebook-messenger"></i></a>
+        <a href="#" id="msg"><i class="fab fa-facebook-messenger"></i></a>
         <a href="#" id="ins"><i class="fab fa-instagram"></i></a>
         <a href="#" id="tw"><i class="fab fa-twitter"></i></a>
         <a href="#" id="pin"><i class="fab fa-pinterest"></i></a>
@@ -75,70 +59,72 @@
     <section class="showcase">
         <h1>get up to 60% off</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, error?</p>
-        <button>shop now</button>
+        <a href="store.html"><button>shop now</button></a>
     </section>
-    
+
+    <h2 class="collections-title">Collections</h2>
     <section class="collections">
-        <div id="box-1">
-            <img src="" alt="">
+        <div class="box">
+            <img src="img/collection-1.jpeg" alt="">
             <h3>women</h3>
             <h6>collections</h6>
         </div>
-        <div id="box-2">
-            <img src="" alt="">
+        <div class="box">
+            <img src="img/collection-2.jpeg" alt="">
             <h3>men</h3>
             <h6>collections</h6>
         </div>
-        <div id="box-3">
-            <img src="" alt="">
+        <div class="box">
+            <img src="img/collection-3.jpeg" alt="">
             <h3>children</h3>
             <h6>collections</h6>
         </div>
     </section>
 
     <!--image gallery slider-->
+    <h2 class="features-title">Features</h2>
     <section class="features">
-        <div class="card-1">
-            <div class="card-header">
-                <img src="" alt="">
+        <div class="cards">
+            <div class="cardHeader">
+                <img id="i1" src="img/card-1.png" alt="">
             </div>
-            <div class="card-footer">
-                <h4>product 1</h4>
-                <p>$50</p>
-            </div>
-        </div>
-        <div class="card-2">
-            <div class="card-header">
-                <img src="" alt="">
-            </div>
-            <div class="card-footer">
-                <h4>product 2</h4>
-                <p>$50</p>
+            <div class="cardFooter">
+                <h4>Black T-shirt</h4>
+                <h3>$19</h3>
             </div>
         </div>
-        <div class="card-3">
-            <div class="card-header">
-                <img src="" alt="">
+        <div class="cards">
+            <div class="cardHeader">
+                <img id="i2" src="img/card-2.png" alt="">
             </div>
-            <div class="card-footer">
-                <h4>product 3</h4>
-                <p>$50</p>
+            <div class="cardFooter">
+                <h4>Women's Bag</h4>
+                <h3>$120</h3>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="cardHeader">
+                <img id="i3" src="img/card-3.png" alt="">
+            </div>
+            <div class="cardFooter">
+                <h4>Kids Pants</h4>
+                <h3>$10</h3>
             </div>
         </div>
     </section>
 
-    <section class="best-sale">
-        <div><img src="" alt=""></div>
+    <section class="sale">
+        <div><img src="img/sale.jpg" alt=""></div>
         <div class="content">
-            <h2>70% off</h2>
+            <h2>Best Seller of The Month<br>70% Off!!</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime ducimus quaerat in voluptas quae.</p>
-            <button>shop now</button>
+            <a href="store.html"><button>shop now</button></a>
         </div>
     </section>
 
     <hr class="body">
 
-    <footer>
+    <footer class="pre-footer">
         <div class="pages">
             <ul>
                 <li><a href="index.html">home</a></li>
@@ -148,18 +134,19 @@
             </ul>
         </div>
         <div class="promo">
-            <img src="" alt="">
+            <img src="img/promo.jpg" alt="">
             <h4>finding the perfect product</h4>
             <p>promo from august 2018</p>
         </div>
         <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"> boulvard N°15, tangier, morocco</i></p>
+            <p><i class="fas fa-map-marker-alt"> adresse, n°19</i></p>
             <p><i class="fas fa-phone"> (000) 000 000 000</i></p>
             <p><i class="fas fa-envelope"> support@homeshopp.com</i></p>
         </div>
-        <div class="copy">
-            <p>copyright &copy; 2018. all right reserved | this project is developed by <a href="">Ilyas Zemrani</a></p>
-        </div>
+    </footer>
+
+    <footer class="main-footer">
+        <p>Copyright &copy; 2018. All Right Reserved | This Project is developed by <a href="">Ilyas Zemrani</a></p>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

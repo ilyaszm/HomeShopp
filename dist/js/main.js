@@ -1,5 +1,5 @@
 
-/** Pagination function*/
+/** Pagination function **/
 
 function ShowPage(id)
 {
@@ -14,4 +14,5 @@ function ShowPage(id)
     if(document.getElementById('page' + id))
         document.getElementById('page' + id).style.display = 'block';
 }
+
 

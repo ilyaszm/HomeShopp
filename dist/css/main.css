@@ -3,17 +3,310 @@
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* INDEX page */
 /* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
 header img {
-    width: 80px;
+    width: 100px;
+    padding-top: 1rem;
+}
+
+hr.body {
+    border: solid 1px #CCC5B9;
 }
 
 /* Navbar */
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 
+nav ul li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+}
+
+nav .header-icons {
+    text-align: center;
+}
+
+nav .header-icons li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Side-icons */
+.side-icons {
+    display: none;
+}
+
+/* Showcase */
+.showcase {
+    padding: 15rem 0;
+    margin: .5rem 0 3rem 0;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    -webkit-clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    text-align: center;
+}
+
+.showcase h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #EB5E28;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.showcase p {
+    font-family: 'Basic', sans-serif;
+    font-size: 16px;
+    color: #FFFCF2;
+    padding: 0 1rem;
+}
+
+.showcase button {
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EB5E28;
+    background: #FFFCF2;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.showcase button:hover {
+    color: #FFFCF2;
+    background: #EB5E28;
+    transition: .5s;
+}
+
+/* Collections */
+.collections {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.collections .box {
+    overflow: hidden;
+}
+
+.collections img {
+    width: 300px;
+    transition: .7s;
+    padding: 1.5rem 0;
+}
+
+.collections img:hover {
+    transform: scale(1.1);
+}
+
+.collections h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.collections h6 {
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2.collections-title,
+h2.features-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    color: #EB5E28;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* Features */
+.features {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.features .cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3rem;
+}
+
+.features img{
+    width: 300px;
+}
+
+.features #i1 {
+    background: #CCC5B9;
+    border-radius: 4px;
+}
+
+.features #i2 {
+    background: rgb(224, 187, 139);
+    border-radius: 4px;
+}
+
+.features #i3 {
+    background: #CCC5B9;
+    border-radius: 4px;
+}
+
+.features h4 {
+    font-family: 'Anton', sans-serif;
+    color: #EB5E28;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.features h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Sale */
+.sale {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 3rem 0;
+}
+
+.sale img {
+    width: 300px;
+}
+
+.sale .content {
+    text-align: center;
+}
+
+.sale h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    color: #EB5E28;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+}
+
+.sale p {
+    font-family: 'Basic', sans-serif;
+    font-size: 16px;
+    color: #403D39;
+    padding: 0 1rem;
+}
+
+.sale button {
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EB5E28;
+    background: #252422;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.sale button:hover {
+    color: #252422;
+    background: #EB5E28;
+    transition: .5s;
+}
+
+/* Pre-Footer */
+.pre-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+.pre-footer .pages {
+    padding-bottom: 2rem;
+}
+
+.pre-footer .pages ul li {
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 2rem;
+    list-style: none;
+    text-align: center;
+}
+
+.pre-footer .pages ul li a {
+    color: #403D39;
+}
+
+.pre-footer .promo {
+    text-align: center;
+}
+
+.pre-footer .promo img {
+    width: 300px;
+}
+
+.pre-footer .promo h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #EB5E28;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+}
+
+.pre-footer .promo p {
+    font-family: 'Basic', sans-serif;
+    font-size: 16px;
+    color: #403D39;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+.pre-footer .contact-info p {
+    text-transform: capitalize;
+}
+
+footer.main-footer {
+    padding: 1rem 0;
+    text-align: center;
+    background: #EB5E28;
+    color: #CCC5B9;
+}
 
 
 /*************** MEDIA QUERIES ***************/
@@ -29,6 +322,53 @@ header img {
     /* section: navbar */
     .navbar .icon {
         display: none;
+    }
+
+    /* Side-icons */
+    .side-icons {
+        display: block;
+    }
+
+    .side-icons a {
+        position: absolute;
+        left: -50px;
+        transition: .5s;
+        padding: .6rem;
+        width: 80px;
+        text-decoration: none;
+        font-size: 28px;
+        color: #EB5E28;
+        border-radius: 0 12px 12px 0;
+        z-index: 1;
+    }
+    
+    .side-icons a:hover {
+        left: 0;
+    }
+    
+    .side-icons #fb {
+        top: 240px;
+        background-color: #FFFCF2;
+    }
+    
+    .side-icons #msg {
+        top: 300px;
+        background-color: #FFFCF2;
+    }
+    
+    .side-icons #ins {
+        top: 360px;
+        background-color: #FFFCF2;
+    }
+    
+    .side-icons #tw {
+        top: 420px;
+        background-color: #FFFCF2;
+    }
+    
+    .side-icons #pin {
+        top: 480px;
+        background-color: #FFFCF2;
     }
 
 }
