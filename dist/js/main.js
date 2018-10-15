@@ -1,9 +1,9 @@
 
-/** Pagination function **/
+/** Pagination function */
 
 function ShowPage(id)
 {
-    var numberOfPages = 2;
+    var numberOfPages = 4;
     
     for(i = 0; i <= numberOfPages; i++)
     {

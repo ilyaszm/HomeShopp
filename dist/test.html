@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--link rel="stylesheet" href="css/main.css"-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<style>
+
+      /*body {
+      background: #262626;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }*/
+
+    /*img {
+      width: 300px;
+    }*/
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      background: #262626;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide .cardHeader {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .swiper-slide .cardHeader img {
+      width: 100%;
+    }
+
+    .swiper-slide .cardFooter {
+      box-sizing: border-box;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .swiper-slide .cardFooter h4,
+    .swiper-slide .cardFooter h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+</style>
+<body>
+
+    <!-- Swiper -->
+  <!--div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-1.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Black T-shirt</h4>
+                <h3>$19</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-2.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Women's Bag</h4>
+                <h3>$120</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-3.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Kids Pants</h4>
+                <h3>$10</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-1.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Black T-shirt</h4>
+                <h3>$19</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-2.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Women's Bag</h4>
+                <h3>$120</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgbx">
+              <img src="img/card-3.png" alt="">
+            </div>
+            <div class="details">
+                <h4>Kids Pants</h4>
+                <h3>$10</h3>
+            </div>
+        </div>
+      </div>
+      <-- Add Pagination -->
+      <!--div class="swiper-pagination"></div>
+    </div-->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="cardHeader">
+                  <img id="i1" src="img/card-1.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Black T-shirt</h4>
+                  <h3>$19</h3>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="cardHeader">
+                  <img id="i2" src="img/card-2.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Women's Bag</h4>
+                  <h3>$120</h3>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="cardHeader">
+                  <img id="i3" src="img/card-3.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Kids Pants</h4>
+                  <h3>$10</h3>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardHeader">
+                  <img id="i1" src="img/card-1.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Black T-shirt</h4>
+                  <h3>$19</h3>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardHeader">
+                  <img id="i2" src="img/card-2.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Women's Bag</h4>
+                  <h3>$120</h3>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardHeader">
+                  <img id="i3" src="img/card-3.png" alt="">
+              </div>
+              <div class="cardFooter">
+                  <h4>Kids Pants</h4>
+                  <h3>$10</h3>
+              </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    <script src="js/swiper.min.js"></script>
+  <script>
+
+ /*var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });*/
+
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+  </script>
+</body>
+
+</html>
