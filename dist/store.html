@@ -22,33 +22,37 @@
 
     <hr class="body">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="store.html">Store <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-            </ul>
-            <ul class="header-icons" id="menu_2">
-                <li><a><i class="fas fa-user"></i></a></li>
-                <li><a><i class="fas fa-heart"></i></a></li>
-                <li><a><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="store.html">Store <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+                <ul class="header-icons" id="menu_2">
+                    <li><a><i class="fas fa-user"></i></a></li>
+                    <li><a><i class="fas fa-heart"></i></a></li>
+                    <li><a><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <hr class="body">
 
     <section class="main">
         <div class="sidebars">
@@ -125,7 +129,10 @@
             </div>
             <div class="sidebar-4">
                 <h3>Subscribe To Our Newsletter</h3>
-                <input type="text"><button><i class=""></i></button>
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Enter your e-mail.." aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Subscribe</i></button>
+                </form>
             </div>
         </div>
         <div class="main-content">
@@ -136,6 +143,7 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
+                <div></div>
                 <div class="dropdown">
                     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Filter By
@@ -149,7 +157,7 @@
                 </div>
             </div>
             <div class="cards">
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i1" src="img/card-1.png" alt="">
                             <div id="sg1" class="stars">
@@ -166,7 +174,7 @@
                             <h3>$19</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img src="img/card-2.png" alt="">
                             <div id="sg2" class="stars">
@@ -183,7 +191,7 @@
                             <h3>$120</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img src="img/card-3.png" alt="">
                             <div id="sg3" class="stars">
@@ -200,7 +208,7 @@
                             <h3>$10</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i4" src="img/card-4.png" alt="">
                         </div>
@@ -217,7 +225,7 @@
                             <h3>$300</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i5" src="img/card-5.png" alt="">
                         </div>
@@ -234,7 +242,7 @@
                             <h3>$14</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i6" src="img/card-6.png" alt="">
                         </div>
@@ -251,7 +259,7 @@
                             <h3>$12</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i7" src="img/card-7.png" alt="">
                         </div>
@@ -268,7 +276,7 @@
                             <h3>$18</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i8" src="img/card-8.png" alt="">
                         </div>
@@ -285,7 +293,7 @@
                             <h3>$21</h3>    
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i9" src="img/card-9.png" alt="">
                         </div>
@@ -302,7 +310,7 @@
                             <h3>$180</h3>    
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i10" src="img/card-10.png" alt="">
                         </div>
@@ -319,7 +327,7 @@
                             <h3>$230</h3>    
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i11" src="img/card-1.png" alt="">
                             <div id="sg11" class="stars">
@@ -336,7 +344,7 @@
                             <h3>$19</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i12" src="img/card-2.png" alt="">
                             <div class="stars">
@@ -353,7 +361,7 @@
                             <h3>$120</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i13" src="img/card-3.png" alt="">
                             <div class="stars">
@@ -370,7 +378,7 @@
                             <h3>$10</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i14" src="img/card-4.png" alt="">
                         </div>
@@ -387,7 +395,7 @@
                             <h3>$300</h3>
                         </div>
                     </div>
-                    <div class="cards">
+                    <div class="card">
                         <div class="cardHeader">
                             <img id="i15" src="img/card-5.png" alt="">
                         </div>
@@ -404,17 +412,19 @@
                             <h3>$14</h3>
                         </div>
                     </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="store.html">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="store.html">1</a></li>
-                            <li class="page-item"><a class="page-link" href="store-p2.html">2</a></li>
-                            <li class="page-item"><a class="page-link" href="store-p2.html">Next</a></li>
-                        </ul>
-                    </nav>
             </div>
         </div>
     </section>
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="store.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="store.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="store-p2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="store-p2.html">Next</a></li>
+        </ul>
+    </nav>
 
     <hr class="body">
 
