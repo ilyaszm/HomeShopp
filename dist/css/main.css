@@ -168,6 +168,7 @@ h2.features-title {
 
 .features img{
     width: 300px;
+    height: 400px;
 }
 
 .features #i1,
@@ -421,6 +422,7 @@ section.main {
 
 .main-content img {
     width: 250px;
+    height: 280px;
 }
 
 .main-content .card .stars {
